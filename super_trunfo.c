@@ -4,8 +4,8 @@ int main(){
   char estado[50];
   char codigo[50];
   char nome[50];
-  int populacao, pontos;
-  float area, pib;
+  int populacao, pontos, pib;
+  float area;
 
   //Visualização na tela e leitura de informações//
   printf("Preencha o Estado (apenas uma palavra): ");
@@ -14,7 +14,7 @@ int main(){
   prinf("Preencha o código da carta com uma letra(A-H) seguido de número um (01-04): ");
   scanf("%s", &codigo);
 
-  printf("Preencha o nome da cidade: ");
+  printf("Preencha o nome da cidade (apenas uma palavra): ");
   scanf("%s", &nome);
 
   printf("Preencha a população da cidade: ");
@@ -24,14 +24,16 @@ int main(){
   scanf("%f", &area);
 
   printf("Preencha o PIB da cidade: ");
-  scanf("%f", &pib);
+  scanf("%d", &pib);
 
   printf("Prencha o número de pontos turísticos da cidade: ");
-  scanf("%f", &pontos);
+  scanf("%d", &pontos);
 
   //Mostragem da carta//
 
-  printf("Carta 1\n Estado: %s\n Código da carta: %s\n Nome da cidade: %s\n População da cidade: %d\n Área da cidade: %f KM²\n PIB da cidade: %f\n Número de pontos turísticos: %f\n", estado, codigo, nome, populacao, area, pib, pontos);
+  printf("Carta 1\n");
+  printf(" Estado: %s\n Código da carta: %s\n Nome da cidade: %s\n", estado, codigo, nome);
+  printf(" População da cidade: %d\n Área da cidade: %f KM²\n PIB da cidade: %d\n Número de pontos turísticos: %d\n", populacao, area, pib, pontos);
 
   return 0;
   
