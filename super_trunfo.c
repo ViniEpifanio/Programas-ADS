@@ -29,8 +29,10 @@ int main(){
   printf("Prencha o número de pontos turísticos da cidade: ");
   scanf("%f", &pontos);
 
-  
-  
-  
+  //Mostragem da carta//
 
+  printf("Carta 1\n Estado: %s\n Código da carta: %s\n Nome da cidade: %s\n População da cidade: %d\n Área da cidade: %f KM²\n PIB da cidade: %f\n Número de pontos turísticos: %f\n", estado, codigo, nome, populacao, area, pib, pontos);
+
+  return 0;
+  
 }
