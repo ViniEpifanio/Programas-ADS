@@ -11,7 +11,7 @@ int main(){
   printf("Preencha o Estado (apenas uma palavra): ");
   scanf("%s", estado);
 
-  prinf("Preencha o código da carta com uma letra(A-H) seguido de número um (01-04): ");
+  printf("Preencha o código da carta com uma letra(A-H) seguido de número um (01-04): ");
   scanf("%s", codigo);
 
   printf("Preencha o nome da cidade (apenas uma palavra): ");
